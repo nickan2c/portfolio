@@ -1,0 +1,73 @@
+/* Variables*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+:root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #4756df;
+    --secondary-color: #ff7235;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;/* removes hyperlink style*/
+    color: var(--primary-color);
+}
+  
+/*hover on a changes its color and underlines*/
+nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;/*makes it stick,always in front of screen*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem; /*rem based on size of screen*/
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav h1{
+    color: var(--primary-color);
+}
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition);/* makes it cool to hover on*/
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.9rem;
+}  
+
+img {
+    max-width: 1000px;
+}
